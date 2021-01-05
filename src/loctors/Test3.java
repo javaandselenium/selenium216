@@ -7,12 +7,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Test3 {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver","./software/chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.actitime.com/login.do");
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("admin");
-	driver.findElement(By.xpath("//input[@name='pwd']")).sendKeys("manager");
-	driver.findElement(By.xpath("//div[text()='Login ']")).click();
+		driver.findElement(By.xpath("//input[@name='pwd']")).sendKeys("manager");
+		driver.findElement(By.xpath("//div[text()='Login ']")).click();
 	}
 
 }
